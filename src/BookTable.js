@@ -3,6 +3,7 @@ import React from "react";
 import BookRow from "./BookRow";
 
 function BookTable(props) {
+  console.log(props.books)
   const bookRows = props.books.map(book => (
     <BookRow key={book.id} book={book} />
   ));
